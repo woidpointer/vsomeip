@@ -23,4 +23,11 @@ namespace :conan do
 
     sh cmd.join(' ')
   end
+
+  task :create do
+    cmd = ['conan']
+    cmd << 'create .'
+
+    sh cmd.join(' ')
+  end
 end

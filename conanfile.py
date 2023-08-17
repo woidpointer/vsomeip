@@ -7,6 +7,7 @@ class VSomeIpRecipe(ConanFile):
     version = "3.3.8"
 
     settings = "os", "compiler", "build_type", "arch"
+    exports_sources = "*"
 
     def config_options(self):
         pass
